@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>StartNet ISP</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="fix-container container">
+
+      <!-- Top nav bar -->
+      <nav class="top-navbar navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">StartNet ISP</a>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+            <span class="navbar-brand">тел. +7(921)123-45-67</span>
+          </div>
+        </div>
+      </nav>
+      <!-- End top nav bar -->
+
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"</li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="img/www.jpg"><div class="carousel-caption">Подключайтесь к провайдеру StartNet!</div>
+            </div>
+            <div class="item">
+              <img src="img/www.jpg"><div class="carousel-caption">Подключайтесь к провайдеру StartNet!</div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!-- Main nav bar -->
+      <nav class="main-navbar navbar navbar-default">
+        <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">На главную</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">Оставить заявку</a></li>
+        </div>
+      </nav>
+      <!-- End main nav bar -->
+
+
+      <div class="fix-container container">
+
+        <p>
+            Компания ООО "СтартНет" предлагает вам подключение к сети Интернет по самым выгодным тарифам в нашем городе.
+            <br>
+            <br>
+            <br>
+        </p>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Название тарифа</th>
+              <th>Скорость</th>
+              <th>Абонентская плата</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Начальный</td>
+              <td>5МБит/с</td>
+              <td>150р.</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Продвинутый</td>
+              <td>25МБит/с</td>
+              <td>250р.</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Укачайся</td>
+              <td>50МБит/с</td>
+              <td>500р.</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Улет</td>
+              <td>100МБит/с</td>
+              <td>1000р.</td>
+            </tr>
+          </tbody>
+        </table>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Отправка заявки на подключение</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Ваш адрес</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Адресс">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Тариф</label>
+                    <select class="form-control">
+                      <option>5 МБит/с</option>
+                      <option>25 МБит/с</option>
+                      <option>50 МБит/с</option>
+                      <option>100 МБит/с</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Ваши контакты</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Номер телефона или адрес электронной почты">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+              <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

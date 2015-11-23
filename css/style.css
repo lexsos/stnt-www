@@ -1,0 +1,14 @@
+.top-navbar {
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.main-navbar {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.fix-container {
+    width: 870px !important;
+}
