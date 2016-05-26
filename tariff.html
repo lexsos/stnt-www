@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ООО "СтартНет"</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="fix-container container">
+
+      <!-- Top nav bar -->
+      <nav class="top-navbar navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">ООО "СтартНет"</a>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+            <span class="navbar-brand">тел. +7 (911) 528-80-13</span>
+          </div>
+        </div>
+      </nav>
+      <!-- End top nav bar -->
+
+      <img src="img/stnt.jpg" class="main-banner">
+
+
+      <!-- Main nav bar -->
+      <nav class="main-navbar navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">Главная</a></li>
+            <li class="active"><a href="#">Тарифы</a></li>
+            <li class=""><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End main nav bar -->
+
+      <!-- Main  container -->
+      <div class="">
+
+        <div class="row">
+
+          <div class="col-xs-4">
+            <div class="thumbnail tariff-thumbnail">
+              <div class="caption">
+                <h1>5 Мбит/с</h1>
+                <h3 class="tariff-heder">Эконом-5</h3>
+                <h4 class="tariff-heder">Цена: 150р.</h4>
+                <p>Тариф подходит для работы с электронной почтой и не расчитан на большое количество членов семьи.</p>
+                <a href="#" class="btn btn-default tariff-button" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="thumbnail tariff-thumbnail">
+              <div class="caption">
+                <h1>10 Мбит/с</h1>
+                <h3 class="tariff-heder">Базовый-10</h3>
+                <h4 class="tariff-heder">Цена: 150р.</h4>
+                <p>Тариф подходит для работы с электронной почтой и не расчитан на большое количество членов семьи.</p>
+                <a href="#" class="btn btn-default tariff-button" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="thumbnail tariff-thumbnail">
+              <div class="caption">
+                <h1>25 Мбит/с</h1>
+                <h3 class="tariff-heder">Стандарт-25</h3>
+                <h4 class="tariff-heder">Цена: 150р.</h4>
+                <p>Тариф подходит для работы с электронной почтой и не расчитан на большое количество членов семьи.</p>
+                <a href="#" class="btn btn-default tariff-button" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="thumbnail tariff-thumbnail">
+              <div class="caption">
+                <h1>50 Мбит/с</h1>
+                <h3 class="tariff-heder">Продвинутый-50</h3>
+                <h4 class="tariff-heder">Цена: 150р.</h4>
+                <p>Тариф подходит для работы с электронной почтой и не расчитан на большое количество членов семьи.</p>
+                <a href="#" class="btn btn-default tariff-button" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="thumbnail tariff-thumbnail">
+              <div class="caption">
+                <h1>100 Мбит/с</h1>
+                <h3 class="tariff-heder">Супер-100</h3>
+                <h4 class="tariff-heder">Цена: 150р.</h4>
+                <p>Тариф подходит для работы с электронной почтой и не расчитан на большое количество членов семьи.</p>
+                <a href="#" class="btn btn-default tariff-button" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- End main container -->
+
+
+      <!-- bottom nav bar -->
+      <nav class="top-navbar navbar navbar-inverse bottom-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <span class="text-muted">ООО "СтартНет"</span>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+            <span class="text-muted">тел. +7 (911) 528-80-13</span>
+          </div>
+        </div>
+      </nav>
+      <!-- End bottom nav bar -->
+
+
+
+      <!-- Start tariff connect modal dialog -->
+      <div class="modal fade" id="tariff-connect-dialog" tabindex="-1" role="dialog" aria-labelledby="tariff-connect-dialog-label">
+      <form enctype="multipart/form-data" method="post" action="#">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="tariff-connect-dialog-label">Подключить тариф</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                  <label for="FIO">Ваше имя:</label>
+                  <input class="form-control" id="FIO" placeholder="Укажите как к вам обращаться">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Ваш номер телефона или электронная почта:</label>
+                  <input class="form-control" id="phone" placeholder="Укажите ваши контактные данные">
+                </div>
+                <div class="form-group">
+                  <label for="tariff">Желаемый тариф</label>
+                  <select class="form-control" id="tariff">
+                    <option value="">Эконом-5</option>
+                    <option value="">Базовый-10</option>
+                  </select>
+                </div>
+            </div>
+            <div class="modal-footer relative">
+              <img class="send-progress" src="img/progress.gif">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+              <button type="submit" class="btn btn-primary">Подключить</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+      <!-- End tariff connect modal dialog -->
+
+
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

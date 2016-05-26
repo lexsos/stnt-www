@@ -7,8 +7,48 @@
 .main-navbar {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-top: none;
 }
 
+
 .fix-container {
-    width: 870px !important;
+    width: 800px !important;
+}
+
+.main-banner {
+    width: 770px;
+    border-color: #e7e7e7 !important;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.tariff-thumbnail {
+    height: 350px;
+    position: relative;
+}
+
+.tariff-heder {
+    color: #777;
+}
+
+.tariff-button {
+    width: 209px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.bottom-nav {
+    min-height: 15px;
+    padding-right: 15px;
+}
+
+.send-progress {
+    display: none;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+}
+
+.relative {
+    position: relative;
 }
