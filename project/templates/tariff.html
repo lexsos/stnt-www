@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>ООО "СтартНет"</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -24,7 +24,7 @@
       </nav>
       <!-- End top nav bar -->
 
-      <img src="img/stnt.jpg" class="main-banner">
+      <img src="{{ STATIC_URL }}img/stnt.jpg" class="main-banner">
 
 
       <!-- Main nav bar -->
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="modal-footer relative">
-              <img class="send-progress" src="img/progress.gif">
+              <img class="send-progress" src="{{ STATIC_URL }}img/progress.gif">
               <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
               <button type="submit" class="btn btn-primary">Подключить</button>
             </div>
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="modal-footer relative">
-              <img class="send-progress" src="img/progress.gif">
+              <img class="send-progress" src="{{ STATIC_URL }}img/progress.gif">
               <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
               <button type="submit" class="btn btn-primary">Отправить</button>
             </div>
@@ -207,8 +207,8 @@
 
     </div>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-1.11.3.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,4 @@
+--requirement=common.txt
+
+psycopg2==
+gunicorn==

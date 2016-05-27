@@ -1,0 +1,7 @@
+--requirement=common.txt
+
+django-debug-toolbar==1.4
+ipython==4.2.0
+
+flake8==2.5.4
+pep8==1.7.0
