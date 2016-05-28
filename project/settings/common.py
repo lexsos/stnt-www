@@ -7,6 +7,10 @@ SECRET_KEY = 'evotd%2dz#6zsn)$gx=u(*5v@3u_^j^@^w)_x3hf7&h=ivfde='
 DEBUG = False
 ALLOWED_HOSTS = []
 
+PROJECT_APP = [
+    'tariff',
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -14,7 +18,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'tinymce',
+] + PROJECT_APP
+
+
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,3 +89,11 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'public', 'media')
+
+
+TINYMCE_SPELLCHECKER = True
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': "advanced",
+    'plugins': "spellchecker",
+    'theme_advanced_buttons3_add': "|,spellchecker",
+}
