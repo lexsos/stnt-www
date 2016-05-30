@@ -10,6 +10,7 @@ ALLOWED_HOSTS = []
 PROJECT_APP = [
     'publications',
     'tariff',
+    'contacts',
 ]
 
 INSTALLED_APPS = [

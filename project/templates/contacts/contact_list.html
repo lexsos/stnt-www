@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block contact_active %}active{% endblock %}
+
+
+{% block main_content %}
+
+    <div class="page-title">
+        <a href="{% url 'contact_list' %}" class="nav-chain">Контакты {% if not contact_list %}(пусто){% endif%}</a>
+    </div>
+
+
+    {% for contact in contact_list %}
+        <address>
+            <strong>{{ contact.title }}</strong>
+            <br>
+            {{ contact.content | safe }}
+        </address>
+    {% endfor %}
+
+{% endblock %}
