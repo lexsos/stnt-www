@@ -11,6 +11,7 @@ PROJECT_APP = [
     'publications',
     'tariff',
     'contacts',
+    'main_page',
 ]
 
 INSTALLED_APPS = [

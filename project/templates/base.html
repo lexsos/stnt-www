@@ -31,7 +31,7 @@
       <nav class="main-navbar navbar navbar-default">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-            <li class="{% block index_active %}{% endblock %}"><a href="#">Главная</a></li>
+            <li class="{% block index_active %}{% endblock %}"><a href="{% url 'main_page' %}">Главная</a></li>
             <li class="{% block tariff_active %}{% endblock %}"><a href="{% url 'tariff_list' %}">Тарифы</a></li>
             <li class="{% block contact_active %}{% endblock %}"><a href="{% url 'contact_list' %}">Контакты</a></li>
             <li class=""><a href="#" data-toggle="modal" data-target="#feedback-dialog">Обратная связь</a></li>
