@@ -31,9 +31,9 @@
       <nav class="main-navbar navbar navbar-default">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-            <li class=""><a href="#">Главная</a></li>
-            <li class="active"><a href="#">Тарифы</a></li>
-            <li class=""><a href="#">Контакты</a></li>
+            <li class="{% block index_active %}{% endblock %}"><a href="#">Главная</a></li>
+            <li class="{% block tariff_active %}{% endblock %}"><a href="{% url 'tariff_list' %}">Тарифы</a></li>
+            <li class="{% block contact_active %}{% endblock %}"><a href="#">Контакты</a></li>
             <li class=""><a href="#" data-toggle="modal" data-target="#feedback-dialog">Обратная связь</a></li>
             <li class=""><a href="#">Личный кабинет</a></li>
           </ul>

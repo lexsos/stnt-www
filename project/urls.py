@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 urlpatterns = [
     url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^tariff/', include('tariff.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^tmpl/(.*)$', render),
 ]

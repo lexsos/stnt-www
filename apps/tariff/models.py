@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from dj_mixin.publications.models import Publication
+
+from publications.models import Publication
 
 
 class Tariff(Publication):
@@ -20,6 +21,7 @@ class Tariff(Publication):
     content = models.TextField(
         verbose_name=_('tariff content'),
     )
+
 
     def __unicode__(self):
         return self.title

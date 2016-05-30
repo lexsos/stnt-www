@@ -8,6 +8,7 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 PROJECT_APP = [
+    'publications',
     'tariff',
 ]
 
