@@ -1,0 +1,43 @@
+<form id="feedback_response_form" enctype="multipart/form-data" method="post" action="{% url 'feedback_add_question' %}">
+    {% csrf_token %}
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="feedback-dialog-label">Задать вопрос</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group  {% if form.fio.errors %}has-error{% endif %}">
+                    <label for="{{ form.fio.id_for_label }}">ФИО *</label>
+                    {{ form.fio }}
+                    {% if form.fio.errors %}
+                        <span class="help-inline">Укажите Ваше ФИО</span>
+                    {% endif %}
+                </div>
+                <div class="form-group {% if form.contact.errors %}has-error{% endif %}">
+                    <label for="{{ form.contact.id_for_label }}">Ваши контакты *</label>
+                    {{ form.contact }}
+                    {% if form.contact.errors %}
+                        <span class="help-inline">Укажите Ваши контакты</span>
+                    {% endif %}
+                </div>
+                <div class="form-group {% if form.content.errors %}has-error{% endif %}">
+                    <label for="{{ form.content.id_for_label }}">Вопрос *</label>
+                    {{ form.content }}
+                    {% if form.content.errors %}
+                        <span class="help-inline">Укажите Ваш вопрос</span>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="modal-footer relative">
+              <img class="send-progress" src="{{ STATIC_URL }}img/progress.gif">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </div>
+
+        </div>
+    </div>
+</form>

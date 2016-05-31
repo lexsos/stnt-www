@@ -12,6 +12,7 @@ PROJECT_APP = [
     'tariff',
     'contacts',
     'main_page',
+    'feedback',
 ]
 
 INSTALLED_APPS = [
@@ -21,7 +22,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'captcha',
     'tinymce',
+    'static_precompiler',
 ] + PROJECT_APP
 
 
@@ -88,6 +92,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, '..', 'public', 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'static_precompiler.finders.StaticPrecompilerFinder',
+]
 
 
 MEDIA_URL = '/media/'
