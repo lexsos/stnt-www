@@ -4,10 +4,10 @@ from django.utils.translation import ugettext_lazy as _
 from publications.admin import PublicationAdmin
 from admintinymce.admin import AdminTinymceMixin
 
-from .models import Tariff
+from .models import Tariff, ConnectRequest
 
 
-class TafiffAdmin(AdminTinymceMixin, PublicationAdmin):
+class TariffAdmin(AdminTinymceMixin, PublicationAdmin):
     list_filter = ('weight', 'enabled')
     list_display = ('title', 'weight', 'enabled')
 
@@ -24,4 +24,10 @@ class TafiffAdmin(AdminTinymceMixin, PublicationAdmin):
     rich_fields = ('content',)
 
 
-admin.site.register(Tariff, TafiffAdmin)
+class ConnectRequestAdmin(admin.ModelAdmin):
+    list_filter = ('tariff', 'answered', 'create_date')
+    list_display = ('create_date', 'tariff', 'fio', 'address', 'contact', 'answered')
+
+
+admin.site.register(Tariff, TariffAdmin)
+admin.site.register(ConnectRequest, ConnectRequestAdmin)

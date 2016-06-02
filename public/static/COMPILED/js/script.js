@@ -6,7 +6,7 @@
 
   $(document).ready((function(_this) {
     return function() {
-      var set_ajax_feedback;
+      var set_ajax_connect_request, set_ajax_feedback;
       set_ajax_feedback = function() {
         return $('#feedback_response_form').ajaxForm({
           success: function(data) {
@@ -19,7 +19,25 @@
           }
         });
       };
-      return set_ajax_feedback();
+      set_ajax_feedback();
+      set_ajax_connect_request = function() {
+        return $('#connect_request_form').ajaxForm({
+          success: function(data) {
+            $('#tariff-connect-dialog').html(data);
+            return set_ajax_connect_request();
+          },
+          beforeSubmit: function() {
+            $('#connect_request_form .send-progress').css('display', 'inline');
+            return true;
+          }
+        });
+      };
+      set_ajax_connect_request();
+      return $('.tariff-thumbnail .tariff-button').click(function() {
+        var tariffId;
+        tariffId = $(this).attr('tatiff_id');
+        return $('#tariff-connect-dialog #id_tariff').val(tariffId);
+      });
     };
   })(this));
 

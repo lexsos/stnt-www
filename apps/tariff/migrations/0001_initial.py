@@ -6,6 +6,7 @@ from django.db import migrations, models
 import django.utils.timezone
 
 
+# noinspection PyPep8,PyPep8,PyPep8,PyPep8
 class Migration(migrations.Migration):
 
     initial = True

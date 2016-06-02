@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-30 13:30+0300\n"
+"POT-Creation-Date: 2016-06-02 09:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,22 @@ msgstr ""
 #: admin.py:16
 msgid "Tariff parameters"
 msgstr "Параметры тарифа"
+
+#: forms.py:11
+msgid "please, enter fio"
+msgstr "Укажите как к вам обращаться"
+
+#: forms.py:19
+msgid "please, enter contact"
+msgstr "Укажите ваши контактные данные (e-mail или номер телефона)"
+
+#: forms.py:27
+msgid "please, enter address"
+msgstr "Укажите ваш адрес"
+
+#: forms.py:33 forms.py:37
+msgid "please, enter tariff"
+msgstr "Укажите желаемый тариф"
 
 #: models.py:10
 msgid "tariff speed"
@@ -40,10 +56,38 @@ msgstr "цена"
 msgid "tariff content"
 msgstr "описание"
 
-#: models.py:30
+#: models.py:31
 msgid "tariff items"
 msgstr "тарифы"
 
-#: models.py:31
+#: models.py:32 models.py:39
 msgid "tariff"
 msgstr "тариф"
+
+#: models.py:42
+msgid "user fio"
+msgstr "ФИО"
+
+#: models.py:46
+msgid "user contact"
+msgstr "контакты"
+
+#: models.py:50
+msgid "user address"
+msgstr "адрес"
+
+#: models.py:55
+msgid "answered"
+msgstr "ответил(а)"
+
+#: models.py:59
+msgid "create date"
+msgstr "дата создания"
+
+#: models.py:66
+msgid "connect request items"
+msgstr "запросы на подключение"
+
+#: models.py:67
+msgid "connect request item"
+msgstr "запрос на подключение"

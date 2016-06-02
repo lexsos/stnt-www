@@ -24,3 +24,9 @@ class PublicationManager(models.Manager):
 
     def get_query_set(self):
         return PublicationQuerySet(self.model, using=self._db)
+
+
+class PublishedManager(PublicationManager):
+
+    def all(self):
+        return self.published()

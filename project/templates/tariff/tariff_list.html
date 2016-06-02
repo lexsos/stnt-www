@@ -19,7 +19,7 @@
                         <h3 class="tariff-heder">{{ tariff.title }}</h3>
                         <h4 class="tariff-heder">Цена: {{ tariff.price }}</h4>
                         {{ tariff.content | safe }}
-                        <a href="#" class="btn btn-default tariff-button" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+                        <a href="#" class="btn btn-default tariff-button" tatiff_id="{{ tariff.id }}" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
                     </div>
                 </div>
             </div>

@@ -10,3 +10,17 @@ $(document).ready =>
                 $('#feedback_response_form .send-progress').css('display', 'inline')
                 true
   set_ajax_feedback()
+
+  set_ajax_connect_request = ->
+        $('#connect_request_form').ajaxForm
+            success: (data) ->
+                $('#tariff-connect-dialog').html data
+                set_ajax_connect_request()
+            beforeSubmit: ->
+                $('#connect_request_form .send-progress').css('display', 'inline')
+                true
+  set_ajax_connect_request()
+
+  $('.tariff-thumbnail .tariff-button').click ->
+    tariffId = $(this).attr('tatiff_id')
+    $('#tariff-connect-dialog #id_tariff').val(tariffId)
