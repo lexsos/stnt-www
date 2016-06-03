@@ -21,6 +21,6 @@ $(document).ready =>
                 true
   set_ajax_connect_request()
 
-  $('.tariff-thumbnail .tariff-button').click ->
+  $('.tariff-thumbnail').click ->
     tariffId = $(this).attr('tatiff_id')
     $('#tariff-connect-dialog #id_tariff').val(tariffId)

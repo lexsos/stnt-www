@@ -13,13 +13,12 @@
     <div class="row">
         {% for tariff in object_list %}
             <div class="col-xs-4">
-                <div class="thumbnail tariff-thumbnail">
+                <div class="thumbnail tariff-thumbnail" tatiff_id="{{ tariff.id }}" data-toggle="modal" data-target="#tariff-connect-dialog">
                     <div class="caption">
                         <h1>{{ tariff.speed }}</h1>
                         <h3 class="tariff-heder">{{ tariff.title }}</h3>
-                        <h4 class="tariff-heder">Цена: {{ tariff.price }}</h4>
                         {{ tariff.content | safe }}
-                        <a href="#" class="btn btn-default tariff-button" tatiff_id="{{ tariff.id }}" role="button" data-toggle="modal" data-target="#tariff-connect-dialog">Подключить</a>
+                        <h4 class="tariff-price">Цена: {{ tariff.price }}</h4>
                     </div>
                 </div>
             </div>

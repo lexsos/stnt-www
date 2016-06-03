@@ -28,12 +28,23 @@
 }
 
 .tariff-thumbnail {
-    height: 350px;
+    height: 300px;
     position: relative;
+    cursor: pointer;
+}
+
+.tariff-thumbnail:hover {
+    background-color: #e6e6e6;
 }
 
 .tariff-heder {
     color: #777;
+}
+
+.tariff-price {
+    color: #777;
+    position: absolute;
+    bottom: 10px;
 }
 
 .tariff-button {
@@ -68,4 +79,8 @@
 .page-title a {
     color: #999999;
     text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
