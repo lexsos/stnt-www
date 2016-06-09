@@ -109,3 +109,5 @@ TINYMCE_DEFAULT_CONFIG = {
     'plugins': "spellchecker",
     'theme_advanced_buttons3_add': "|,spellchecker",
 }
+
+SITE_ID = 2
